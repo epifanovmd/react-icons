@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import FolderHiddenSvg from '../svg/folder-hidden.svg';
+import React, { FC, memo } from "react";
+import FolderHiddenSvg from "../svg/folder-hidden.svg";
 
 export interface IFolderHiddenIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const FolderHiddenIcon: FC<IFolderHiddenIconProps> = memo(props => {
-  return <FolderHiddenSvg {...props} />;
-});
+export const FolderHiddenIcon: FC<IFolderHiddenIconProps> = memo(props => (
+  <FolderHiddenSvg {...props} />
+));

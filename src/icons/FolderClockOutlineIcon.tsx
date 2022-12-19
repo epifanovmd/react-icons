@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import FolderClockOutlineSvg from '../svg/folder-clock-outline.svg';
+import React, { FC, memo } from "react";
+import FolderClockOutlineSvg from "../svg/folder-clock-outline.svg";
 
 export interface IFolderClockOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const FolderClockOutlineIcon: FC<IFolderClockOutlineIconProps> = memo(props => {
-  return <FolderClockOutlineSvg {...props} />;
-});
+export const FolderClockOutlineIcon: FC<IFolderClockOutlineIconProps> = memo(
+  props => <FolderClockOutlineSvg {...props} />,
+);

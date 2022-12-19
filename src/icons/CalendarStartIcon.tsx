@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import CalendarStartSvg from '../svg/calendar-start.svg';
+import React, { FC, memo } from "react";
+import CalendarStartSvg from "../svg/calendar-start.svg";
 
 export interface ICalendarStartIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const CalendarStartIcon: FC<ICalendarStartIconProps> = memo(props => {
-  return <CalendarStartSvg {...props} />;
-});
+export const CalendarStartIcon: FC<ICalendarStartIconProps> = memo(props => (
+  <CalendarStartSvg {...props} />
+));

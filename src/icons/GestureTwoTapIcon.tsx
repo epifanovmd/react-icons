@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import GestureTwoTapSvg from '../svg/gesture-two-tap.svg';
+import React, { FC, memo } from "react";
+import GestureTwoTapSvg from "../svg/gesture-two-tap.svg";
 
 export interface IGestureTwoTapIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const GestureTwoTapIcon: FC<IGestureTwoTapIconProps> = memo(props => {
-  return <GestureTwoTapSvg {...props} />;
-});
+export const GestureTwoTapIcon: FC<IGestureTwoTapIconProps> = memo(props => (
+  <GestureTwoTapSvg {...props} />
+));

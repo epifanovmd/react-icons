@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import MicrosoftXboxSvg from '../svg/microsoft-xbox.svg';
+import React, { FC, memo } from "react";
+import MicrosoftXboxSvg from "../svg/microsoft-xbox.svg";
 
 export interface IMicrosoftXboxIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const MicrosoftXboxIcon: FC<IMicrosoftXboxIconProps> = memo(props => {
-  return <MicrosoftXboxSvg {...props} />;
-});
+export const MicrosoftXboxIcon: FC<IMicrosoftXboxIconProps> = memo(props => (
+  <MicrosoftXboxSvg {...props} />
+));

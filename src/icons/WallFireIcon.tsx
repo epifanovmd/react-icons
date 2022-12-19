@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import WallFireSvg from '../svg/wall-fire.svg';
+import React, { FC, memo } from "react";
+import WallFireSvg from "../svg/wall-fire.svg";
 
 export interface IWallFireIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const WallFireIcon: FC<IWallFireIconProps> = memo(props => {
-  return <WallFireSvg {...props} />;
-});
+export const WallFireIcon: FC<IWallFireIconProps> = memo(props => (
+  <WallFireSvg {...props} />
+));

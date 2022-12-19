@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import InboxRemoveSvg from '../svg/inbox-remove.svg';
+import React, { FC, memo } from "react";
+import InboxRemoveSvg from "../svg/inbox-remove.svg";
 
 export interface IInboxRemoveIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const InboxRemoveIcon: FC<IInboxRemoveIconProps> = memo(props => {
-  return <InboxRemoveSvg {...props} />;
-});
+export const InboxRemoveIcon: FC<IInboxRemoveIconProps> = memo(props => (
+  <InboxRemoveSvg {...props} />
+));

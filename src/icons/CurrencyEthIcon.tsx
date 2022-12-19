@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import CurrencyEthSvg from '../svg/currency-eth.svg';
+import React, { FC, memo } from "react";
+import CurrencyEthSvg from "../svg/currency-eth.svg";
 
 export interface ICurrencyEthIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const CurrencyEthIcon: FC<ICurrencyEthIconProps> = memo(props => {
-  return <CurrencyEthSvg {...props} />;
-});
+export const CurrencyEthIcon: FC<ICurrencyEthIconProps> = memo(props => (
+  <CurrencyEthSvg {...props} />
+));

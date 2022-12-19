@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import CreditCardChipSvg from '../svg/credit-card-chip.svg';
+import React, { FC, memo } from "react";
+import CreditCardChipSvg from "../svg/credit-card-chip.svg";
 
 export interface ICreditCardChipIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const CreditCardChipIcon: FC<ICreditCardChipIconProps> = memo(props => {
-  return <CreditCardChipSvg {...props} />;
-});
+export const CreditCardChipIcon: FC<ICreditCardChipIconProps> = memo(props => (
+  <CreditCardChipSvg {...props} />
+));

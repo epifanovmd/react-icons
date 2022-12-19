@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import GamepadSquareOutlineSvg from '../svg/gamepad-square-outline.svg';
+import React, { FC, memo } from "react";
+import GamepadSquareOutlineSvg from "../svg/gamepad-square-outline.svg";
 
 export interface IGamepadSquareOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const GamepadSquareOutlineIcon: FC<IGamepadSquareOutlineIconProps> = memo(props => {
-  return <GamepadSquareOutlineSvg {...props} />;
-});
+export const GamepadSquareOutlineIcon: FC<IGamepadSquareOutlineIconProps> =
+  memo(props => <GamepadSquareOutlineSvg {...props} />);

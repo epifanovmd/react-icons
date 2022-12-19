@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import TruckAlertOutlineSvg from '../svg/truck-alert-outline.svg';
+import React, { FC, memo } from "react";
+import TruckAlertOutlineSvg from "../svg/truck-alert-outline.svg";
 
 export interface ITruckAlertOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const TruckAlertOutlineIcon: FC<ITruckAlertOutlineIconProps> = memo(props => {
-  return <TruckAlertOutlineSvg {...props} />;
-});
+export const TruckAlertOutlineIcon: FC<ITruckAlertOutlineIconProps> = memo(
+  props => <TruckAlertOutlineSvg {...props} />,
+);

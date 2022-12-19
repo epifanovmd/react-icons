@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import PhoneDialSvg from '../svg/phone-dial.svg';
+import React, { FC, memo } from "react";
+import PhoneDialSvg from "../svg/phone-dial.svg";
 
 export interface IPhoneDialIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const PhoneDialIcon: FC<IPhoneDialIconProps> = memo(props => {
-  return <PhoneDialSvg {...props} />;
-});
+export const PhoneDialIcon: FC<IPhoneDialIconProps> = memo(props => (
+  <PhoneDialSvg {...props} />
+));

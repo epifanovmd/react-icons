@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import RedhatSvg from '../svg/redhat.svg';
+import React, { FC, memo } from "react";
+import RedhatSvg from "../svg/redhat.svg";
 
 export interface IRedhatIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const RedhatIcon: FC<IRedhatIconProps> = memo(props => {
-  return <RedhatSvg {...props} />;
-});
+export const RedhatIcon: FC<IRedhatIconProps> = memo(props => (
+  <RedhatSvg {...props} />
+));

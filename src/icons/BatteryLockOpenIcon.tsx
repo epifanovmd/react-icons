@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import BatteryLockOpenSvg from '../svg/battery-lock-open.svg';
+import React, { FC, memo } from "react";
+import BatteryLockOpenSvg from "../svg/battery-lock-open.svg";
 
 export interface IBatteryLockOpenIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const BatteryLockOpenIcon: FC<IBatteryLockOpenIconProps> = memo(props => {
-  return <BatteryLockOpenSvg {...props} />;
-});
+export const BatteryLockOpenIcon: FC<IBatteryLockOpenIconProps> = memo(
+  props => <BatteryLockOpenSvg {...props} />,
+);

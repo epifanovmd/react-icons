@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import StadiumSvg from '../svg/stadium.svg';
+import React, { FC, memo } from "react";
+import StadiumSvg from "../svg/stadium.svg";
 
 export interface IStadiumIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const StadiumIcon: FC<IStadiumIconProps> = memo(props => {
-  return <StadiumSvg {...props} />;
-});
+export const StadiumIcon: FC<IStadiumIconProps> = memo(props => (
+  <StadiumSvg {...props} />
+));

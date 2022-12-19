@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import TurnstileSvg from '../svg/turnstile.svg';
+import React, { FC, memo } from "react";
+import TurnstileSvg from "../svg/turnstile.svg";
 
 export interface ITurnstileIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const TurnstileIcon: FC<ITurnstileIconProps> = memo(props => {
-  return <TurnstileSvg {...props} />;
-});
+export const TurnstileIcon: FC<ITurnstileIconProps> = memo(props => (
+  <TurnstileSvg {...props} />
+));

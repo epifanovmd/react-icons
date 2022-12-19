@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import AlarmLightOutlineSvg from '../svg/alarm-light-outline.svg';
+import React, { FC, memo } from "react";
+import AlarmLightOutlineSvg from "../svg/alarm-light-outline.svg";
 
 export interface IAlarmLightOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const AlarmLightOutlineIcon: FC<IAlarmLightOutlineIconProps> = memo(props => {
-  return <AlarmLightOutlineSvg {...props} />;
-});
+export const AlarmLightOutlineIcon: FC<IAlarmLightOutlineIconProps> = memo(
+  props => <AlarmLightOutlineSvg {...props} />,
+);

@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import TableSvg from '../svg/table.svg';
+import React, { FC, memo } from "react";
+import TableSvg from "../svg/table.svg";
 
 export interface ITableIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const TableIcon: FC<ITableIconProps> = memo(props => {
-  return <TableSvg {...props} />;
-});
+export const TableIcon: FC<ITableIconProps> = memo(props => (
+  <TableSvg {...props} />
+));

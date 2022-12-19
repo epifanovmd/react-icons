@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ArchiveSvg from '../svg/archive.svg';
+import React, { FC, memo } from "react";
+import ArchiveSvg from "../svg/archive.svg";
 
 export interface IArchiveIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ArchiveIcon: FC<IArchiveIconProps> = memo(props => {
-  return <ArchiveSvg {...props} />;
-});
+export const ArchiveIcon: FC<IArchiveIconProps> = memo(props => (
+  <ArchiveSvg {...props} />
+));

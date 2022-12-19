@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import BusStopUncoveredSvg from '../svg/bus-stop-uncovered.svg';
+import React, { FC, memo } from "react";
+import BusStopUncoveredSvg from "../svg/bus-stop-uncovered.svg";
 
 export interface IBusStopUncoveredIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const BusStopUncoveredIcon: FC<IBusStopUncoveredIconProps> = memo(props => {
-  return <BusStopUncoveredSvg {...props} />;
-});
+export const BusStopUncoveredIcon: FC<IBusStopUncoveredIconProps> = memo(
+  props => <BusStopUncoveredSvg {...props} />,
+);

@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import HeadDotsHorizontalSvg from '../svg/head-dots-horizontal.svg';
+import React, { FC, memo } from "react";
+import HeadDotsHorizontalSvg from "../svg/head-dots-horizontal.svg";
 
 export interface IHeadDotsHorizontalIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const HeadDotsHorizontalIcon: FC<IHeadDotsHorizontalIconProps> = memo(props => {
-  return <HeadDotsHorizontalSvg {...props} />;
-});
+export const HeadDotsHorizontalIcon: FC<IHeadDotsHorizontalIconProps> = memo(
+  props => <HeadDotsHorizontalSvg {...props} />,
+);

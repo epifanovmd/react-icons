@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import EmoticonCrySvg from '../svg/emoticon-cry.svg';
+import React, { FC, memo } from "react";
+import EmoticonCrySvg from "../svg/emoticon-cry.svg";
 
 export interface IEmoticonCryIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const EmoticonCryIcon: FC<IEmoticonCryIconProps> = memo(props => {
-  return <EmoticonCrySvg {...props} />;
-});
+export const EmoticonCryIcon: FC<IEmoticonCryIconProps> = memo(props => (
+  <EmoticonCrySvg {...props} />
+));

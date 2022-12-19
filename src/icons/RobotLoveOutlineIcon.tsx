@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import RobotLoveOutlineSvg from '../svg/robot-love-outline.svg';
+import React, { FC, memo } from "react";
+import RobotLoveOutlineSvg from "../svg/robot-love-outline.svg";
 
 export interface IRobotLoveOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const RobotLoveOutlineIcon: FC<IRobotLoveOutlineIconProps> = memo(props => {
-  return <RobotLoveOutlineSvg {...props} />;
-});
+export const RobotLoveOutlineIcon: FC<IRobotLoveOutlineIconProps> = memo(
+  props => <RobotLoveOutlineSvg {...props} />,
+);

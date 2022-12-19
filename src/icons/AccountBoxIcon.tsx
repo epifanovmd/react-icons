@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import AccountBoxSvg from '../svg/account-box.svg';
+import React, { FC, memo } from "react";
+import AccountBoxSvg from "../svg/account-box.svg";
 
 export interface IAccountBoxIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const AccountBoxIcon: FC<IAccountBoxIconProps> = memo(props => {
-  return <AccountBoxSvg {...props} />;
-});
+export const AccountBoxIcon: FC<IAccountBoxIconProps> = memo(props => (
+  <AccountBoxSvg {...props} />
+));

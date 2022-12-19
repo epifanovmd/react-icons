@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import JsfiddleSvg from '../svg/jsfiddle.svg';
+import React, { FC, memo } from "react";
+import JsfiddleSvg from "../svg/jsfiddle.svg";
 
 export interface IJsfiddleIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const JsfiddleIcon: FC<IJsfiddleIconProps> = memo(props => {
-  return <JsfiddleSvg {...props} />;
-});
+export const JsfiddleIcon: FC<IJsfiddleIconProps> = memo(props => (
+  <JsfiddleSvg {...props} />
+));

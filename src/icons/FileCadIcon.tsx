@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import FileCadSvg from '../svg/file-cad.svg';
+import React, { FC, memo } from "react";
+import FileCadSvg from "../svg/file-cad.svg";
 
 export interface IFileCadIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const FileCadIcon: FC<IFileCadIconProps> = memo(props => {
-  return <FileCadSvg {...props} />;
-});
+export const FileCadIcon: FC<IFileCadIconProps> = memo(props => (
+  <FileCadSvg {...props} />
+));

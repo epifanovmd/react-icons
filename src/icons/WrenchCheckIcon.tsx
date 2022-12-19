@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import WrenchCheckSvg from '../svg/wrench-check.svg';
+import React, { FC, memo } from "react";
+import WrenchCheckSvg from "../svg/wrench-check.svg";
 
 export interface IWrenchCheckIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const WrenchCheckIcon: FC<IWrenchCheckIconProps> = memo(props => {
-  return <WrenchCheckSvg {...props} />;
-});
+export const WrenchCheckIcon: FC<IWrenchCheckIconProps> = memo(props => (
+  <WrenchCheckSvg {...props} />
+));

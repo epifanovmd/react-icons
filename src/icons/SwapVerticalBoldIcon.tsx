@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import SwapVerticalBoldSvg from '../svg/swap-vertical-bold.svg';
+import React, { FC, memo } from "react";
+import SwapVerticalBoldSvg from "../svg/swap-vertical-bold.svg";
 
 export interface ISwapVerticalBoldIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const SwapVerticalBoldIcon: FC<ISwapVerticalBoldIconProps> = memo(props => {
-  return <SwapVerticalBoldSvg {...props} />;
-});
+export const SwapVerticalBoldIcon: FC<ISwapVerticalBoldIconProps> = memo(
+  props => <SwapVerticalBoldSvg {...props} />,
+);

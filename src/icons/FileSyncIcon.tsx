@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import FileSyncSvg from '../svg/file-sync.svg';
+import React, { FC, memo } from "react";
+import FileSyncSvg from "../svg/file-sync.svg";
 
 export interface IFileSyncIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const FileSyncIcon: FC<IFileSyncIconProps> = memo(props => {
-  return <FileSyncSvg {...props} />;
-});
+export const FileSyncIcon: FC<IFileSyncIconProps> = memo(props => (
+  <FileSyncSvg {...props} />
+));

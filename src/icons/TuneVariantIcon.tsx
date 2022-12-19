@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import TuneVariantSvg from '../svg/tune-variant.svg';
+import React, { FC, memo } from "react";
+import TuneVariantSvg from "../svg/tune-variant.svg";
 
 export interface ITuneVariantIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const TuneVariantIcon: FC<ITuneVariantIconProps> = memo(props => {
-  return <TuneVariantSvg {...props} />;
-});
+export const TuneVariantIcon: FC<ITuneVariantIconProps> = memo(props => (
+  <TuneVariantSvg {...props} />
+));

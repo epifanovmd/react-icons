@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import LongitudeSvg from '../svg/longitude.svg';
+import React, { FC, memo } from "react";
+import LongitudeSvg from "../svg/longitude.svg";
 
 export interface ILongitudeIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const LongitudeIcon: FC<ILongitudeIconProps> = memo(props => {
-  return <LongitudeSvg {...props} />;
-});
+export const LongitudeIcon: FC<ILongitudeIconProps> = memo(props => (
+  <LongitudeSvg {...props} />
+));

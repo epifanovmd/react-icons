@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import PowerPlugOffOutlineSvg from '../svg/power-plug-off-outline.svg';
+import React, { FC, memo } from "react";
+import PowerPlugOffOutlineSvg from "../svg/power-plug-off-outline.svg";
 
 export interface IPowerPlugOffOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const PowerPlugOffOutlineIcon: FC<IPowerPlugOffOutlineIconProps> = memo(props => {
-  return <PowerPlugOffOutlineSvg {...props} />;
-});
+export const PowerPlugOffOutlineIcon: FC<IPowerPlugOffOutlineIconProps> = memo(
+  props => <PowerPlugOffOutlineSvg {...props} />,
+);

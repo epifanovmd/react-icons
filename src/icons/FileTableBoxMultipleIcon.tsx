@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import FileTableBoxMultipleSvg from '../svg/file-table-box-multiple.svg';
+import React, { FC, memo } from "react";
+import FileTableBoxMultipleSvg from "../svg/file-table-box-multiple.svg";
 
 export interface IFileTableBoxMultipleIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const FileTableBoxMultipleIcon: FC<IFileTableBoxMultipleIconProps> = memo(props => {
-  return <FileTableBoxMultipleSvg {...props} />;
-});
+export const FileTableBoxMultipleIcon: FC<IFileTableBoxMultipleIconProps> =
+  memo(props => <FileTableBoxMultipleSvg {...props} />);

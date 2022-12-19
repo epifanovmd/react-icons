@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ShoePrintSvg from '../svg/shoe-print.svg';
+import React, { FC, memo } from "react";
+import ShoePrintSvg from "../svg/shoe-print.svg";
 
 export interface IShoePrintIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ShoePrintIcon: FC<IShoePrintIconProps> = memo(props => {
-  return <ShoePrintSvg {...props} />;
-});
+export const ShoePrintIcon: FC<IShoePrintIconProps> = memo(props => (
+  <ShoePrintSvg {...props} />
+));

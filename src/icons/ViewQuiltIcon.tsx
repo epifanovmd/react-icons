@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ViewQuiltSvg from '../svg/view-quilt.svg';
+import React, { FC, memo } from "react";
+import ViewQuiltSvg from "../svg/view-quilt.svg";
 
 export interface IViewQuiltIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ViewQuiltIcon: FC<IViewQuiltIconProps> = memo(props => {
-  return <ViewQuiltSvg {...props} />;
-});
+export const ViewQuiltIcon: FC<IViewQuiltIconProps> = memo(props => (
+  <ViewQuiltSvg {...props} />
+));

@@ -1,9 +1,6 @@
-import React, { FC, memo } from 'react';
-import ApiSvg from '../svg/api.svg';
+import React, { FC, memo } from "react";
+import ApiSvg from "../svg/api.svg";
 
-export interface IApiIconProps
-  extends React.HTMLAttributes<HTMLOrSVGElement> {}
+export interface IApiIconProps extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ApiIcon: FC<IApiIconProps> = memo(props => {
-  return <ApiSvg {...props} />;
-});
+export const ApiIcon: FC<IApiIconProps> = memo(props => <ApiSvg {...props} />);

@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import SignatureSvg from '../svg/signature.svg';
+import React, { FC, memo } from "react";
+import SignatureSvg from "../svg/signature.svg";
 
 export interface ISignatureIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const SignatureIcon: FC<ISignatureIconProps> = memo(props => {
-  return <SignatureSvg {...props} />;
-});
+export const SignatureIcon: FC<ISignatureIconProps> = memo(props => (
+  <SignatureSvg {...props} />
+));

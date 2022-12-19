@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import BeakerAlertSvg from '../svg/beaker-alert.svg';
+import React, { FC, memo } from "react";
+import BeakerAlertSvg from "../svg/beaker-alert.svg";
 
 export interface IBeakerAlertIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const BeakerAlertIcon: FC<IBeakerAlertIconProps> = memo(props => {
-  return <BeakerAlertSvg {...props} />;
-});
+export const BeakerAlertIcon: FC<IBeakerAlertIconProps> = memo(props => (
+  <BeakerAlertSvg {...props} />
+));

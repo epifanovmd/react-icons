@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import GaugeLowSvg from '../svg/gauge-low.svg';
+import React, { FC, memo } from "react";
+import GaugeLowSvg from "../svg/gauge-low.svg";
 
 export interface IGaugeLowIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const GaugeLowIcon: FC<IGaugeLowIconProps> = memo(props => {
-  return <GaugeLowSvg {...props} />;
-});
+export const GaugeLowIcon: FC<IGaugeLowIconProps> = memo(props => (
+  <GaugeLowSvg {...props} />
+));

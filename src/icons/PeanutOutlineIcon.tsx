@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import PeanutOutlineSvg from '../svg/peanut-outline.svg';
+import React, { FC, memo } from "react";
+import PeanutOutlineSvg from "../svg/peanut-outline.svg";
 
 export interface IPeanutOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const PeanutOutlineIcon: FC<IPeanutOutlineIconProps> = memo(props => {
-  return <PeanutOutlineSvg {...props} />;
-});
+export const PeanutOutlineIcon: FC<IPeanutOutlineIconProps> = memo(props => (
+  <PeanutOutlineSvg {...props} />
+));

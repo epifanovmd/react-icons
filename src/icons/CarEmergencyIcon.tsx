@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import CarEmergencySvg from '../svg/car-emergency.svg';
+import React, { FC, memo } from "react";
+import CarEmergencySvg from "../svg/car-emergency.svg";
 
 export interface ICarEmergencyIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const CarEmergencyIcon: FC<ICarEmergencyIconProps> = memo(props => {
-  return <CarEmergencySvg {...props} />;
-});
+export const CarEmergencyIcon: FC<ICarEmergencyIconProps> = memo(props => (
+  <CarEmergencySvg {...props} />
+));

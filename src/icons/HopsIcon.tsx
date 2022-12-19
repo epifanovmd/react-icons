@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import HopsSvg from '../svg/hops.svg';
+import React, { FC, memo } from "react";
+import HopsSvg from "../svg/hops.svg";
 
 export interface IHopsIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const HopsIcon: FC<IHopsIconProps> = memo(props => {
-  return <HopsSvg {...props} />;
-});
+export const HopsIcon: FC<IHopsIconProps> = memo(props => (
+  <HopsSvg {...props} />
+));

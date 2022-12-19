@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import HandHeartOutlineSvg from '../svg/hand-heart-outline.svg';
+import React, { FC, memo } from "react";
+import HandHeartOutlineSvg from "../svg/hand-heart-outline.svg";
 
 export interface IHandHeartOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const HandHeartOutlineIcon: FC<IHandHeartOutlineIconProps> = memo(props => {
-  return <HandHeartOutlineSvg {...props} />;
-});
+export const HandHeartOutlineIcon: FC<IHandHeartOutlineIconProps> = memo(
+  props => <HandHeartOutlineSvg {...props} />,
+);

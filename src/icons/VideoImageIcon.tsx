@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import VideoImageSvg from '../svg/video-image.svg';
+import React, { FC, memo } from "react";
+import VideoImageSvg from "../svg/video-image.svg";
 
 export interface IVideoImageIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const VideoImageIcon: FC<IVideoImageIconProps> = memo(props => {
-  return <VideoImageSvg {...props} />;
-});
+export const VideoImageIcon: FC<IVideoImageIconProps> = memo(props => (
+  <VideoImageSvg {...props} />
+));

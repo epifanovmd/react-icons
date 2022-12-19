@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import SawBladeSvg from '../svg/saw-blade.svg';
+import React, { FC, memo } from "react";
+import SawBladeSvg from "../svg/saw-blade.svg";
 
 export interface ISawBladeIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const SawBladeIcon: FC<ISawBladeIconProps> = memo(props => {
-  return <SawBladeSvg {...props} />;
-});
+export const SawBladeIcon: FC<ISawBladeIconProps> = memo(props => (
+  <SawBladeSvg {...props} />
+));

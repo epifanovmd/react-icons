@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import CloudDownloadSvg from '../svg/cloud-download.svg';
+import React, { FC, memo } from "react";
+import CloudDownloadSvg from "../svg/cloud-download.svg";
 
 export interface ICloudDownloadIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const CloudDownloadIcon: FC<ICloudDownloadIconProps> = memo(props => {
-  return <CloudDownloadSvg {...props} />;
-});
+export const CloudDownloadIcon: FC<ICloudDownloadIconProps> = memo(props => (
+  <CloudDownloadSvg {...props} />
+));

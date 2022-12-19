@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import AccessPointNetworkSvg from '../svg/access-point-network.svg';
+import React, { FC, memo } from "react";
+import AccessPointNetworkSvg from "../svg/access-point-network.svg";
 
 export interface IAccessPointNetworkIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const AccessPointNetworkIcon: FC<IAccessPointNetworkIconProps> = memo(props => {
-  return <AccessPointNetworkSvg {...props} />;
-});
+export const AccessPointNetworkIcon: FC<IAccessPointNetworkIconProps> = memo(
+  props => <AccessPointNetworkSvg {...props} />,
+);

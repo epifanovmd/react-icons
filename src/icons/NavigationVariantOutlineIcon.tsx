@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import NavigationVariantOutlineSvg from '../svg/navigation-variant-outline.svg';
+import React, { FC, memo } from "react";
+import NavigationVariantOutlineSvg from "../svg/navigation-variant-outline.svg";
 
 export interface INavigationVariantOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const NavigationVariantOutlineIcon: FC<INavigationVariantOutlineIconProps> = memo(props => {
-  return <NavigationVariantOutlineSvg {...props} />;
-});
+export const NavigationVariantOutlineIcon: FC<INavigationVariantOutlineIconProps> =
+  memo(props => <NavigationVariantOutlineSvg {...props} />);

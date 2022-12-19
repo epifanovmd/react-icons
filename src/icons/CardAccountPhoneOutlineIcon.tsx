@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import CardAccountPhoneOutlineSvg from '../svg/card-account-phone-outline.svg';
+import React, { FC, memo } from "react";
+import CardAccountPhoneOutlineSvg from "../svg/card-account-phone-outline.svg";
 
 export interface ICardAccountPhoneOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const CardAccountPhoneOutlineIcon: FC<ICardAccountPhoneOutlineIconProps> = memo(props => {
-  return <CardAccountPhoneOutlineSvg {...props} />;
-});
+export const CardAccountPhoneOutlineIcon: FC<ICardAccountPhoneOutlineIconProps> =
+  memo(props => <CardAccountPhoneOutlineSvg {...props} />);

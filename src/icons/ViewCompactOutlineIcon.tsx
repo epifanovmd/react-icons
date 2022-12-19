@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ViewCompactOutlineSvg from '../svg/view-compact-outline.svg';
+import React, { FC, memo } from "react";
+import ViewCompactOutlineSvg from "../svg/view-compact-outline.svg";
 
 export interface IViewCompactOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ViewCompactOutlineIcon: FC<IViewCompactOutlineIconProps> = memo(props => {
-  return <ViewCompactOutlineSvg {...props} />;
-});
+export const ViewCompactOutlineIcon: FC<IViewCompactOutlineIconProps> = memo(
+  props => <ViewCompactOutlineSvg {...props} />,
+);

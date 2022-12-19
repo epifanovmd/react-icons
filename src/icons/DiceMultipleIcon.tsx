@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import DiceMultipleSvg from '../svg/dice-multiple.svg';
+import React, { FC, memo } from "react";
+import DiceMultipleSvg from "../svg/dice-multiple.svg";
 
 export interface IDiceMultipleIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const DiceMultipleIcon: FC<IDiceMultipleIconProps> = memo(props => {
-  return <DiceMultipleSvg {...props} />;
-});
+export const DiceMultipleIcon: FC<IDiceMultipleIconProps> = memo(props => (
+  <DiceMultipleSvg {...props} />
+));

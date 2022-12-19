@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ToolboxSvg from '../svg/toolbox.svg';
+import React, { FC, memo } from "react";
+import ToolboxSvg from "../svg/toolbox.svg";
 
 export interface IToolboxIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ToolboxIcon: FC<IToolboxIconProps> = memo(props => {
-  return <ToolboxSvg {...props} />;
-});
+export const ToolboxIcon: FC<IToolboxIconProps> = memo(props => (
+  <ToolboxSvg {...props} />
+));

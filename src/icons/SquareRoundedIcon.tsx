@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import SquareRoundedSvg from '../svg/square-rounded.svg';
+import React, { FC, memo } from "react";
+import SquareRoundedSvg from "../svg/square-rounded.svg";
 
 export interface ISquareRoundedIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const SquareRoundedIcon: FC<ISquareRoundedIconProps> = memo(props => {
-  return <SquareRoundedSvg {...props} />;
-});
+export const SquareRoundedIcon: FC<ISquareRoundedIconProps> = memo(props => (
+  <SquareRoundedSvg {...props} />
+));

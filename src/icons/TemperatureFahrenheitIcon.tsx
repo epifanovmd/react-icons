@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import TemperatureFahrenheitSvg from '../svg/temperature-fahrenheit.svg';
+import React, { FC, memo } from "react";
+import TemperatureFahrenheitSvg from "../svg/temperature-fahrenheit.svg";
 
 export interface ITemperatureFahrenheitIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const TemperatureFahrenheitIcon: FC<ITemperatureFahrenheitIconProps> = memo(props => {
-  return <TemperatureFahrenheitSvg {...props} />;
-});
+export const TemperatureFahrenheitIcon: FC<ITemperatureFahrenheitIconProps> =
+  memo(props => <TemperatureFahrenheitSvg {...props} />);

@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import DatabaseMarkerOutlineSvg from '../svg/database-marker-outline.svg';
+import React, { FC, memo } from "react";
+import DatabaseMarkerOutlineSvg from "../svg/database-marker-outline.svg";
 
 export interface IDatabaseMarkerOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const DatabaseMarkerOutlineIcon: FC<IDatabaseMarkerOutlineIconProps> = memo(props => {
-  return <DatabaseMarkerOutlineSvg {...props} />;
-});
+export const DatabaseMarkerOutlineIcon: FC<IDatabaseMarkerOutlineIconProps> =
+  memo(props => <DatabaseMarkerOutlineSvg {...props} />);

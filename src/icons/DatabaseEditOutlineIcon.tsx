@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import DatabaseEditOutlineSvg from '../svg/database-edit-outline.svg';
+import React, { FC, memo } from "react";
+import DatabaseEditOutlineSvg from "../svg/database-edit-outline.svg";
 
 export interface IDatabaseEditOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const DatabaseEditOutlineIcon: FC<IDatabaseEditOutlineIconProps> = memo(props => {
-  return <DatabaseEditOutlineSvg {...props} />;
-});
+export const DatabaseEditOutlineIcon: FC<IDatabaseEditOutlineIconProps> = memo(
+  props => <DatabaseEditOutlineSvg {...props} />,
+);

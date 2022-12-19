@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import CurrencyBrlSvg from '../svg/currency-brl.svg';
+import React, { FC, memo } from "react";
+import CurrencyBrlSvg from "../svg/currency-brl.svg";
 
 export interface ICurrencyBrlIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const CurrencyBrlIcon: FC<ICurrencyBrlIconProps> = memo(props => {
-  return <CurrencyBrlSvg {...props} />;
-});
+export const CurrencyBrlIcon: FC<ICurrencyBrlIconProps> = memo(props => (
+  <CurrencyBrlSvg {...props} />
+));

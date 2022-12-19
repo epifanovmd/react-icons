@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import SunSnowflakeSvg from '../svg/sun-snowflake.svg';
+import React, { FC, memo } from "react";
+import SunSnowflakeSvg from "../svg/sun-snowflake.svg";
 
 export interface ISunSnowflakeIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const SunSnowflakeIcon: FC<ISunSnowflakeIconProps> = memo(props => {
-  return <SunSnowflakeSvg {...props} />;
-});
+export const SunSnowflakeIcon: FC<ISunSnowflakeIconProps> = memo(props => (
+  <SunSnowflakeSvg {...props} />
+));

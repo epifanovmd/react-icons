@@ -1,9 +1,6 @@
-import React, { FC, memo } from 'react';
-import RawSvg from '../svg/raw.svg';
+import React, { FC, memo } from "react";
+import RawSvg from "../svg/raw.svg";
 
-export interface IRawIconProps
-  extends React.HTMLAttributes<HTMLOrSVGElement> {}
+export interface IRawIconProps extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const RawIcon: FC<IRawIconProps> = memo(props => {
-  return <RawSvg {...props} />;
-});
+export const RawIcon: FC<IRawIconProps> = memo(props => <RawSvg {...props} />);

@@ -1,9 +1,6 @@
-import React, { FC, memo } from 'react';
-import NasSvg from '../svg/nas.svg';
+import React, { FC, memo } from "react";
+import NasSvg from "../svg/nas.svg";
 
-export interface INasIconProps
-  extends React.HTMLAttributes<HTMLOrSVGElement> {}
+export interface INasIconProps extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const NasIcon: FC<INasIconProps> = memo(props => {
-  return <NasSvg {...props} />;
-});
+export const NasIcon: FC<INasIconProps> = memo(props => <NasSvg {...props} />);

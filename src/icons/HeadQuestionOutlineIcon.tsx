@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import HeadQuestionOutlineSvg from '../svg/head-question-outline.svg';
+import React, { FC, memo } from "react";
+import HeadQuestionOutlineSvg from "../svg/head-question-outline.svg";
 
 export interface IHeadQuestionOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const HeadQuestionOutlineIcon: FC<IHeadQuestionOutlineIconProps> = memo(props => {
-  return <HeadQuestionOutlineSvg {...props} />;
-});
+export const HeadQuestionOutlineIcon: FC<IHeadQuestionOutlineIconProps> = memo(
+  props => <HeadQuestionOutlineSvg {...props} />,
+);

@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import DotsSquareSvg from '../svg/dots-square.svg';
+import React, { FC, memo } from "react";
+import DotsSquareSvg from "../svg/dots-square.svg";
 
 export interface IDotsSquareIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const DotsSquareIcon: FC<IDotsSquareIconProps> = memo(props => {
-  return <DotsSquareSvg {...props} />;
-});
+export const DotsSquareIcon: FC<IDotsSquareIconProps> = memo(props => (
+  <DotsSquareSvg {...props} />
+));

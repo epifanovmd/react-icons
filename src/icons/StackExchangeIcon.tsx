@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import StackExchangeSvg from '../svg/stack-exchange.svg';
+import React, { FC, memo } from "react";
+import StackExchangeSvg from "../svg/stack-exchange.svg";
 
 export interface IStackExchangeIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const StackExchangeIcon: FC<IStackExchangeIconProps> = memo(props => {
-  return <StackExchangeSvg {...props} />;
-});
+export const StackExchangeIcon: FC<IStackExchangeIconProps> = memo(props => (
+  <StackExchangeSvg {...props} />
+));

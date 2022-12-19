@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import FilterMenuSvg from '../svg/filter-menu.svg';
+import React, { FC, memo } from "react";
+import FilterMenuSvg from "../svg/filter-menu.svg";
 
 export interface IFilterMenuIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const FilterMenuIcon: FC<IFilterMenuIconProps> = memo(props => {
-  return <FilterMenuSvg {...props} />;
-});
+export const FilterMenuIcon: FC<IFilterMenuIconProps> = memo(props => (
+  <FilterMenuSvg {...props} />
+));

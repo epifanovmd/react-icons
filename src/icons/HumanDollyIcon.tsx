@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import HumanDollySvg from '../svg/human-dolly.svg';
+import React, { FC, memo } from "react";
+import HumanDollySvg from "../svg/human-dolly.svg";
 
 export interface IHumanDollyIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const HumanDollyIcon: FC<IHumanDollyIconProps> = memo(props => {
-  return <HumanDollySvg {...props} />;
-});
+export const HumanDollyIcon: FC<IHumanDollyIconProps> = memo(props => (
+  <HumanDollySvg {...props} />
+));

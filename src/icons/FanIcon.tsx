@@ -1,9 +1,6 @@
-import React, { FC, memo } from 'react';
-import FanSvg from '../svg/fan.svg';
+import React, { FC, memo } from "react";
+import FanSvg from "../svg/fan.svg";
 
-export interface IFanIconProps
-  extends React.HTMLAttributes<HTMLOrSVGElement> {}
+export interface IFanIconProps extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const FanIcon: FC<IFanIconProps> = memo(props => {
-  return <FanSvg {...props} />;
-});
+export const FanIcon: FC<IFanIconProps> = memo(props => <FanSvg {...props} />);

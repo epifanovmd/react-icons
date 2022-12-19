@@ -1,9 +1,6 @@
-import React, { FC, memo } from 'react';
-import BoxSvg from '../svg/box.svg';
+import React, { FC, memo } from "react";
+import BoxSvg from "../svg/box.svg";
 
-export interface IBoxIconProps
-  extends React.HTMLAttributes<HTMLOrSVGElement> {}
+export interface IBoxIconProps extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const BoxIcon: FC<IBoxIconProps> = memo(props => {
-  return <BoxSvg {...props} />;
-});
+export const BoxIcon: FC<IBoxIconProps> = memo(props => <BoxSvg {...props} />);

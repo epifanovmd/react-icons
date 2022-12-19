@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import MessageReplySvg from '../svg/message-reply.svg';
+import React, { FC, memo } from "react";
+import MessageReplySvg from "../svg/message-reply.svg";
 
 export interface IMessageReplyIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const MessageReplyIcon: FC<IMessageReplyIconProps> = memo(props => {
-  return <MessageReplySvg {...props} />;
-});
+export const MessageReplyIcon: FC<IMessageReplyIconProps> = memo(props => (
+  <MessageReplySvg {...props} />
+));

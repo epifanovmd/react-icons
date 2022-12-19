@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import WeightLifterSvg from '../svg/weight-lifter.svg';
+import React, { FC, memo } from "react";
+import WeightLifterSvg from "../svg/weight-lifter.svg";
 
 export interface IWeightLifterIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const WeightLifterIcon: FC<IWeightLifterIconProps> = memo(props => {
-  return <WeightLifterSvg {...props} />;
-});
+export const WeightLifterIcon: FC<IWeightLifterIconProps> = memo(props => (
+  <WeightLifterSvg {...props} />
+));

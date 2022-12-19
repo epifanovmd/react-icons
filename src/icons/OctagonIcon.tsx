@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import OctagonSvg from '../svg/octagon.svg';
+import React, { FC, memo } from "react";
+import OctagonSvg from "../svg/octagon.svg";
 
 export interface IOctagonIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const OctagonIcon: FC<IOctagonIconProps> = memo(props => {
-  return <OctagonSvg {...props} />;
-});
+export const OctagonIcon: FC<IOctagonIconProps> = memo(props => (
+  <OctagonSvg {...props} />
+));

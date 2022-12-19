@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import BookmarkOffSvg from '../svg/bookmark-off.svg';
+import React, { FC, memo } from "react";
+import BookmarkOffSvg from "../svg/bookmark-off.svg";
 
 export interface IBookmarkOffIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const BookmarkOffIcon: FC<IBookmarkOffIconProps> = memo(props => {
-  return <BookmarkOffSvg {...props} />;
-});
+export const BookmarkOffIcon: FC<IBookmarkOffIconProps> = memo(props => (
+  <BookmarkOffSvg {...props} />
+));

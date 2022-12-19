@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import WifiSyncSvg from '../svg/wifi-sync.svg';
+import React, { FC, memo } from "react";
+import WifiSyncSvg from "../svg/wifi-sync.svg";
 
 export interface IWifiSyncIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const WifiSyncIcon: FC<IWifiSyncIconProps> = memo(props => {
-  return <WifiSyncSvg {...props} />;
-});
+export const WifiSyncIcon: FC<IWifiSyncIconProps> = memo(props => (
+  <WifiSyncSvg {...props} />
+));

@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import PlusBoxSvg from '../svg/plus-box.svg';
+import React, { FC, memo } from "react";
+import PlusBoxSvg from "../svg/plus-box.svg";
 
 export interface IPlusBoxIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const PlusBoxIcon: FC<IPlusBoxIconProps> = memo(props => {
-  return <PlusBoxSvg {...props} />;
-});
+export const PlusBoxIcon: FC<IPlusBoxIconProps> = memo(props => (
+  <PlusBoxSvg {...props} />
+));

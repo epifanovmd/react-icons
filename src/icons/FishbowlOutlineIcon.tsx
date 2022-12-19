@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import FishbowlOutlineSvg from '../svg/fishbowl-outline.svg';
+import React, { FC, memo } from "react";
+import FishbowlOutlineSvg from "../svg/fishbowl-outline.svg";
 
 export interface IFishbowlOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const FishbowlOutlineIcon: FC<IFishbowlOutlineIconProps> = memo(props => {
-  return <FishbowlOutlineSvg {...props} />;
-});
+export const FishbowlOutlineIcon: FC<IFishbowlOutlineIconProps> = memo(
+  props => <FishbowlOutlineSvg {...props} />,
+);

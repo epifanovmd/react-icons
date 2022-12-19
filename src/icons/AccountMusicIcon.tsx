@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import AccountMusicSvg from '../svg/account-music.svg';
+import React, { FC, memo } from "react";
+import AccountMusicSvg from "../svg/account-music.svg";
 
 export interface IAccountMusicIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const AccountMusicIcon: FC<IAccountMusicIconProps> = memo(props => {
-  return <AccountMusicSvg {...props} />;
-});
+export const AccountMusicIcon: FC<IAccountMusicIconProps> = memo(props => (
+  <AccountMusicSvg {...props} />
+));

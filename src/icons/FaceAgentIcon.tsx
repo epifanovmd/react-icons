@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import FaceAgentSvg from '../svg/face-agent.svg';
+import React, { FC, memo } from "react";
+import FaceAgentSvg from "../svg/face-agent.svg";
 
 export interface IFaceAgentIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const FaceAgentIcon: FC<IFaceAgentIconProps> = memo(props => {
-  return <FaceAgentSvg {...props} />;
-});
+export const FaceAgentIcon: FC<IFaceAgentIconProps> = memo(props => (
+  <FaceAgentSvg {...props} />
+));

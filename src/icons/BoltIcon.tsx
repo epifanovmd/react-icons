@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import BoltSvg from '../svg/bolt.svg';
+import React, { FC, memo } from "react";
+import BoltSvg from "../svg/bolt.svg";
 
 export interface IBoltIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const BoltIcon: FC<IBoltIconProps> = memo(props => {
-  return <BoltSvg {...props} />;
-});
+export const BoltIcon: FC<IBoltIconProps> = memo(props => (
+  <BoltSvg {...props} />
+));

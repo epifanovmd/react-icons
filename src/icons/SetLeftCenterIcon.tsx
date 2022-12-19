@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import SetLeftCenterSvg from '../svg/set-left-center.svg';
+import React, { FC, memo } from "react";
+import SetLeftCenterSvg from "../svg/set-left-center.svg";
 
 export interface ISetLeftCenterIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const SetLeftCenterIcon: FC<ISetLeftCenterIconProps> = memo(props => {
-  return <SetLeftCenterSvg {...props} />;
-});
+export const SetLeftCenterIcon: FC<ISetLeftCenterIconProps> = memo(props => (
+  <SetLeftCenterSvg {...props} />
+));

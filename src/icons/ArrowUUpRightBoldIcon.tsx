@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ArrowUUpRightBoldSvg from '../svg/arrow-u-up-right-bold.svg';
+import React, { FC, memo } from "react";
+import ArrowUUpRightBoldSvg from "../svg/arrow-u-up-right-bold.svg";
 
 export interface IArrowUUpRightBoldIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ArrowUUpRightBoldIcon: FC<IArrowUUpRightBoldIconProps> = memo(props => {
-  return <ArrowUUpRightBoldSvg {...props} />;
-});
+export const ArrowUUpRightBoldIcon: FC<IArrowUUpRightBoldIconProps> = memo(
+  props => <ArrowUUpRightBoldSvg {...props} />,
+);

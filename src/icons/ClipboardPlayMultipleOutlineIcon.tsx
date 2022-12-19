@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import ClipboardPlayMultipleOutlineSvg from '../svg/clipboard-play-multiple-outline.svg';
+import React, { FC, memo } from "react";
+import ClipboardPlayMultipleOutlineSvg from "../svg/clipboard-play-multiple-outline.svg";
 
 export interface IClipboardPlayMultipleOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ClipboardPlayMultipleOutlineIcon: FC<IClipboardPlayMultipleOutlineIconProps> = memo(props => {
-  return <ClipboardPlayMultipleOutlineSvg {...props} />;
-});
+export const ClipboardPlayMultipleOutlineIcon: FC<IClipboardPlayMultipleOutlineIconProps> =
+  memo(props => <ClipboardPlayMultipleOutlineSvg {...props} />);

@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import WazeSvg from '../svg/waze.svg';
+import React, { FC, memo } from "react";
+import WazeSvg from "../svg/waze.svg";
 
 export interface IWazeIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const WazeIcon: FC<IWazeIconProps> = memo(props => {
-  return <WazeSvg {...props} />;
-});
+export const WazeIcon: FC<IWazeIconProps> = memo(props => (
+  <WazeSvg {...props} />
+));

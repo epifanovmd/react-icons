@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ParaglidingSvg from '../svg/paragliding.svg';
+import React, { FC, memo } from "react";
+import ParaglidingSvg from "../svg/paragliding.svg";
 
 export interface IParaglidingIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ParaglidingIcon: FC<IParaglidingIconProps> = memo(props => {
-  return <ParaglidingSvg {...props} />;
-});
+export const ParaglidingIcon: FC<IParaglidingIconProps> = memo(props => (
+  <ParaglidingSvg {...props} />
+));

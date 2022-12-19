@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import RoadSvg from '../svg/road.svg';
+import React, { FC, memo } from "react";
+import RoadSvg from "../svg/road.svg";
 
 export interface IRoadIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const RoadIcon: FC<IRoadIconProps> = memo(props => {
-  return <RoadSvg {...props} />;
-});
+export const RoadIcon: FC<IRoadIconProps> = memo(props => (
+  <RoadSvg {...props} />
+));

@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import AccountMultipleRemoveSvg from '../svg/account-multiple-remove.svg';
+import React, { FC, memo } from "react";
+import AccountMultipleRemoveSvg from "../svg/account-multiple-remove.svg";
 
 export interface IAccountMultipleRemoveIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const AccountMultipleRemoveIcon: FC<IAccountMultipleRemoveIconProps> = memo(props => {
-  return <AccountMultipleRemoveSvg {...props} />;
-});
+export const AccountMultipleRemoveIcon: FC<IAccountMultipleRemoveIconProps> =
+  memo(props => <AccountMultipleRemoveSvg {...props} />);

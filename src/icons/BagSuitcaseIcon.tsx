@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import BagSuitcaseSvg from '../svg/bag-suitcase.svg';
+import React, { FC, memo } from "react";
+import BagSuitcaseSvg from "../svg/bag-suitcase.svg";
 
 export interface IBagSuitcaseIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const BagSuitcaseIcon: FC<IBagSuitcaseIconProps> = memo(props => {
-  return <BagSuitcaseSvg {...props} />;
-});
+export const BagSuitcaseIcon: FC<IBagSuitcaseIconProps> = memo(props => (
+  <BagSuitcaseSvg {...props} />
+));

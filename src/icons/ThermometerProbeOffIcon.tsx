@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ThermometerProbeOffSvg from '../svg/thermometer-probe-off.svg';
+import React, { FC, memo } from "react";
+import ThermometerProbeOffSvg from "../svg/thermometer-probe-off.svg";
 
 export interface IThermometerProbeOffIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ThermometerProbeOffIcon: FC<IThermometerProbeOffIconProps> = memo(props => {
-  return <ThermometerProbeOffSvg {...props} />;
-});
+export const ThermometerProbeOffIcon: FC<IThermometerProbeOffIconProps> = memo(
+  props => <ThermometerProbeOffSvg {...props} />,
+);

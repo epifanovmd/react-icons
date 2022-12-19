@@ -1,9 +1,6 @@
-import React, { FC, memo } from 'react';
-import NfcSvg from '../svg/nfc.svg';
+import React, { FC, memo } from "react";
+import NfcSvg from "../svg/nfc.svg";
 
-export interface INfcIconProps
-  extends React.HTMLAttributes<HTMLOrSVGElement> {}
+export interface INfcIconProps extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const NfcIcon: FC<INfcIconProps> = memo(props => {
-  return <NfcSvg {...props} />;
-});
+export const NfcIcon: FC<INfcIconProps> = memo(props => <NfcSvg {...props} />);

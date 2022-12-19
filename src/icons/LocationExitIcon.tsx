@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import LocationExitSvg from '../svg/location-exit.svg';
+import React, { FC, memo } from "react";
+import LocationExitSvg from "../svg/location-exit.svg";
 
 export interface ILocationExitIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const LocationExitIcon: FC<ILocationExitIconProps> = memo(props => {
-  return <LocationExitSvg {...props} />;
-});
+export const LocationExitIcon: FC<ILocationExitIconProps> = memo(props => (
+  <LocationExitSvg {...props} />
+));

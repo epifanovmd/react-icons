@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import WaterBoilerAlertSvg from '../svg/water-boiler-alert.svg';
+import React, { FC, memo } from "react";
+import WaterBoilerAlertSvg from "../svg/water-boiler-alert.svg";
 
 export interface IWaterBoilerAlertIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const WaterBoilerAlertIcon: FC<IWaterBoilerAlertIconProps> = memo(props => {
-  return <WaterBoilerAlertSvg {...props} />;
-});
+export const WaterBoilerAlertIcon: FC<IWaterBoilerAlertIconProps> = memo(
+  props => <WaterBoilerAlertSvg {...props} />,
+);

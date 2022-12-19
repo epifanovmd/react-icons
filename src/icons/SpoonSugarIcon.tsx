@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import SpoonSugarSvg from '../svg/spoon-sugar.svg';
+import React, { FC, memo } from "react";
+import SpoonSugarSvg from "../svg/spoon-sugar.svg";
 
 export interface ISpoonSugarIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const SpoonSugarIcon: FC<ISpoonSugarIconProps> = memo(props => {
-  return <SpoonSugarSvg {...props} />;
-});
+export const SpoonSugarIcon: FC<ISpoonSugarIconProps> = memo(props => (
+  <SpoonSugarSvg {...props} />
+));

@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import ArrowBottomRightThickSvg from '../svg/arrow-bottom-right-thick.svg';
+import React, { FC, memo } from "react";
+import ArrowBottomRightThickSvg from "../svg/arrow-bottom-right-thick.svg";
 
 export interface IArrowBottomRightThickIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ArrowBottomRightThickIcon: FC<IArrowBottomRightThickIconProps> = memo(props => {
-  return <ArrowBottomRightThickSvg {...props} />;
-});
+export const ArrowBottomRightThickIcon: FC<IArrowBottomRightThickIconProps> =
+  memo(props => <ArrowBottomRightThickSvg {...props} />);

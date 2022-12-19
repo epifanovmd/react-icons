@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import LedOutlineSvg from '../svg/led-outline.svg';
+import React, { FC, memo } from "react";
+import LedOutlineSvg from "../svg/led-outline.svg";
 
 export interface ILedOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const LedOutlineIcon: FC<ILedOutlineIconProps> = memo(props => {
-  return <LedOutlineSvg {...props} />;
-});
+export const LedOutlineIcon: FC<ILedOutlineIconProps> = memo(props => (
+  <LedOutlineSvg {...props} />
+));

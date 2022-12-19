@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import YogaSvg from '../svg/yoga.svg';
+import React, { FC, memo } from "react";
+import YogaSvg from "../svg/yoga.svg";
 
 export interface IYogaIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const YogaIcon: FC<IYogaIconProps> = memo(props => {
-  return <YogaSvg {...props} />;
-});
+export const YogaIcon: FC<IYogaIconProps> = memo(props => (
+  <YogaSvg {...props} />
+));

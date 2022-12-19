@@ -1,9 +1,6 @@
-import React, { FC, memo } from 'react';
-import DnaSvg from '../svg/dna.svg';
+import React, { FC, memo } from "react";
+import DnaSvg from "../svg/dna.svg";
 
-export interface IDnaIconProps
-  extends React.HTMLAttributes<HTMLOrSVGElement> {}
+export interface IDnaIconProps extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const DnaIcon: FC<IDnaIconProps> = memo(props => {
-  return <DnaSvg {...props} />;
-});
+export const DnaIcon: FC<IDnaIconProps> = memo(props => <DnaSvg {...props} />);

@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import ClipboardClockOutlineSvg from '../svg/clipboard-clock-outline.svg';
+import React, { FC, memo } from "react";
+import ClipboardClockOutlineSvg from "../svg/clipboard-clock-outline.svg";
 
 export interface IClipboardClockOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ClipboardClockOutlineIcon: FC<IClipboardClockOutlineIconProps> = memo(props => {
-  return <ClipboardClockOutlineSvg {...props} />;
-});
+export const ClipboardClockOutlineIcon: FC<IClipboardClockOutlineIconProps> =
+  memo(props => <ClipboardClockOutlineSvg {...props} />);

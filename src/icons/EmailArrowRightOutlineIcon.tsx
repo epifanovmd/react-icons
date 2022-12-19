@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import EmailArrowRightOutlineSvg from '../svg/email-arrow-right-outline.svg';
+import React, { FC, memo } from "react";
+import EmailArrowRightOutlineSvg from "../svg/email-arrow-right-outline.svg";
 
 export interface IEmailArrowRightOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const EmailArrowRightOutlineIcon: FC<IEmailArrowRightOutlineIconProps> = memo(props => {
-  return <EmailArrowRightOutlineSvg {...props} />;
-});
+export const EmailArrowRightOutlineIcon: FC<IEmailArrowRightOutlineIconProps> =
+  memo(props => <EmailArrowRightOutlineSvg {...props} />);

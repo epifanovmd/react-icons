@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import SprinklerFireSvg from '../svg/sprinkler-fire.svg';
+import React, { FC, memo } from "react";
+import SprinklerFireSvg from "../svg/sprinkler-fire.svg";
 
 export interface ISprinklerFireIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const SprinklerFireIcon: FC<ISprinklerFireIconProps> = memo(props => {
-  return <SprinklerFireSvg {...props} />;
-});
+export const SprinklerFireIcon: FC<ISprinklerFireIconProps> = memo(props => (
+  <SprinklerFireSvg {...props} />
+));

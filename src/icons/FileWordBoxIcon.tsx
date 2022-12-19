@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import FileWordBoxSvg from '../svg/file-word-box.svg';
+import React, { FC, memo } from "react";
+import FileWordBoxSvg from "../svg/file-word-box.svg";
 
 export interface IFileWordBoxIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const FileWordBoxIcon: FC<IFileWordBoxIconProps> = memo(props => {
-  return <FileWordBoxSvg {...props} />;
-});
+export const FileWordBoxIcon: FC<IFileWordBoxIconProps> = memo(props => (
+  <FileWordBoxSvg {...props} />
+));

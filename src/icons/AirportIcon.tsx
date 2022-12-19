@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import AirportSvg from '../svg/airport.svg';
+import React, { FC, memo } from "react";
+import AirportSvg from "../svg/airport.svg";
 
 export interface IAirportIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const AirportIcon: FC<IAirportIconProps> = memo(props => {
-  return <AirportSvg {...props} />;
-});
+export const AirportIcon: FC<IAirportIconProps> = memo(props => (
+  <AirportSvg {...props} />
+));

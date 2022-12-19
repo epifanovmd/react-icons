@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import WrenchClockOutlineSvg from '../svg/wrench-clock-outline.svg';
+import React, { FC, memo } from "react";
+import WrenchClockOutlineSvg from "../svg/wrench-clock-outline.svg";
 
 export interface IWrenchClockOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const WrenchClockOutlineIcon: FC<IWrenchClockOutlineIconProps> = memo(props => {
-  return <WrenchClockOutlineSvg {...props} />;
-});
+export const WrenchClockOutlineIcon: FC<IWrenchClockOutlineIconProps> = memo(
+  props => <WrenchClockOutlineSvg {...props} />,
+);

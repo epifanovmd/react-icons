@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import EqualizerOutlineSvg from '../svg/equalizer-outline.svg';
+import React, { FC, memo } from "react";
+import EqualizerOutlineSvg from "../svg/equalizer-outline.svg";
 
 export interface IEqualizerOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const EqualizerOutlineIcon: FC<IEqualizerOutlineIconProps> = memo(props => {
-  return <EqualizerOutlineSvg {...props} />;
-});
+export const EqualizerOutlineIcon: FC<IEqualizerOutlineIconProps> = memo(
+  props => <EqualizerOutlineSvg {...props} />,
+);

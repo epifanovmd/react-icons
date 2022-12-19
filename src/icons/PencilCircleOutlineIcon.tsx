@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import PencilCircleOutlineSvg from '../svg/pencil-circle-outline.svg';
+import React, { FC, memo } from "react";
+import PencilCircleOutlineSvg from "../svg/pencil-circle-outline.svg";
 
 export interface IPencilCircleOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const PencilCircleOutlineIcon: FC<IPencilCircleOutlineIconProps> = memo(props => {
-  return <PencilCircleOutlineSvg {...props} />;
-});
+export const PencilCircleOutlineIcon: FC<IPencilCircleOutlineIconProps> = memo(
+  props => <PencilCircleOutlineSvg {...props} />,
+);

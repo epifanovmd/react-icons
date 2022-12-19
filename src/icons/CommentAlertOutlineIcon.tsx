@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import CommentAlertOutlineSvg from '../svg/comment-alert-outline.svg';
+import React, { FC, memo } from "react";
+import CommentAlertOutlineSvg from "../svg/comment-alert-outline.svg";
 
 export interface ICommentAlertOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const CommentAlertOutlineIcon: FC<ICommentAlertOutlineIconProps> = memo(props => {
-  return <CommentAlertOutlineSvg {...props} />;
-});
+export const CommentAlertOutlineIcon: FC<ICommentAlertOutlineIconProps> = memo(
+  props => <CommentAlertOutlineSvg {...props} />,
+);

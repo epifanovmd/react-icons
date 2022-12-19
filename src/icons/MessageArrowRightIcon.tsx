@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import MessageArrowRightSvg from '../svg/message-arrow-right.svg';
+import React, { FC, memo } from "react";
+import MessageArrowRightSvg from "../svg/message-arrow-right.svg";
 
 export interface IMessageArrowRightIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const MessageArrowRightIcon: FC<IMessageArrowRightIconProps> = memo(props => {
-  return <MessageArrowRightSvg {...props} />;
-});
+export const MessageArrowRightIcon: FC<IMessageArrowRightIconProps> = memo(
+  props => <MessageArrowRightSvg {...props} />,
+);

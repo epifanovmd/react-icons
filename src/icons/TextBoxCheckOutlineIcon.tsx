@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import TextBoxCheckOutlineSvg from '../svg/text-box-check-outline.svg';
+import React, { FC, memo } from "react";
+import TextBoxCheckOutlineSvg from "../svg/text-box-check-outline.svg";
 
 export interface ITextBoxCheckOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const TextBoxCheckOutlineIcon: FC<ITextBoxCheckOutlineIconProps> = memo(props => {
-  return <TextBoxCheckOutlineSvg {...props} />;
-});
+export const TextBoxCheckOutlineIcon: FC<ITextBoxCheckOutlineIconProps> = memo(
+  props => <TextBoxCheckOutlineSvg {...props} />,
+);

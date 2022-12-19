@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import InformationOutlineSvg from '../svg/information-outline.svg';
+import React, { FC, memo } from "react";
+import InformationOutlineSvg from "../svg/information-outline.svg";
 
 export interface IInformationOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const InformationOutlineIcon: FC<IInformationOutlineIconProps> = memo(props => {
-  return <InformationOutlineSvg {...props} />;
-});
+export const InformationOutlineIcon: FC<IInformationOutlineIconProps> = memo(
+  props => <InformationOutlineSvg {...props} />,
+);

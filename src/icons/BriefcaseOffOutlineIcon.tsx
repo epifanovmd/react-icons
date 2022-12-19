@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import BriefcaseOffOutlineSvg from '../svg/briefcase-off-outline.svg';
+import React, { FC, memo } from "react";
+import BriefcaseOffOutlineSvg from "../svg/briefcase-off-outline.svg";
 
 export interface IBriefcaseOffOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const BriefcaseOffOutlineIcon: FC<IBriefcaseOffOutlineIconProps> = memo(props => {
-  return <BriefcaseOffOutlineSvg {...props} />;
-});
+export const BriefcaseOffOutlineIcon: FC<IBriefcaseOffOutlineIconProps> = memo(
+  props => <BriefcaseOffOutlineSvg {...props} />,
+);

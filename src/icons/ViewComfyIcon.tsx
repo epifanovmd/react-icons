@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ViewComfySvg from '../svg/view-comfy.svg';
+import React, { FC, memo } from "react";
+import ViewComfySvg from "../svg/view-comfy.svg";
 
 export interface IViewComfyIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ViewComfyIcon: FC<IViewComfyIconProps> = memo(props => {
-  return <ViewComfySvg {...props} />;
-});
+export const ViewComfyIcon: FC<IViewComfyIconProps> = memo(props => (
+  <ViewComfySvg {...props} />
+));

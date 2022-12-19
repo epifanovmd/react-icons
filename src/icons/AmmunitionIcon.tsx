@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import AmmunitionSvg from '../svg/ammunition.svg';
+import React, { FC, memo } from "react";
+import AmmunitionSvg from "../svg/ammunition.svg";
 
 export interface IAmmunitionIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const AmmunitionIcon: FC<IAmmunitionIconProps> = memo(props => {
-  return <AmmunitionSvg {...props} />;
-});
+export const AmmunitionIcon: FC<IAmmunitionIconProps> = memo(props => (
+  <AmmunitionSvg {...props} />
+));

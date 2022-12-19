@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import TagArrowRightOutlineSvg from '../svg/tag-arrow-right-outline.svg';
+import React, { FC, memo } from "react";
+import TagArrowRightOutlineSvg from "../svg/tag-arrow-right-outline.svg";
 
 export interface ITagArrowRightOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const TagArrowRightOutlineIcon: FC<ITagArrowRightOutlineIconProps> = memo(props => {
-  return <TagArrowRightOutlineSvg {...props} />;
-});
+export const TagArrowRightOutlineIcon: FC<ITagArrowRightOutlineIconProps> =
+  memo(props => <TagArrowRightOutlineSvg {...props} />);

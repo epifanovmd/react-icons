@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import WeatherSunnyAlertSvg from '../svg/weather-sunny-alert.svg';
+import React, { FC, memo } from "react";
+import WeatherSunnyAlertSvg from "../svg/weather-sunny-alert.svg";
 
 export interface IWeatherSunnyAlertIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const WeatherSunnyAlertIcon: FC<IWeatherSunnyAlertIconProps> = memo(props => {
-  return <WeatherSunnyAlertSvg {...props} />;
-});
+export const WeatherSunnyAlertIcon: FC<IWeatherSunnyAlertIconProps> = memo(
+  props => <WeatherSunnyAlertSvg {...props} />,
+);

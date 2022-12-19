@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import KettleSvg from '../svg/kettle.svg';
+import React, { FC, memo } from "react";
+import KettleSvg from "../svg/kettle.svg";
 
 export interface IKettleIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const KettleIcon: FC<IKettleIconProps> = memo(props => {
-  return <KettleSvg {...props} />;
-});
+export const KettleIcon: FC<IKettleIconProps> = memo(props => (
+  <KettleSvg {...props} />
+));

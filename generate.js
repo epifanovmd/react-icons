@@ -2,55 +2,23 @@ import fs from "fs";
 import path from "path";
 import { promisify } from "util";
 import pkg from "lodash";
-const { template, camelCase, upperFirst } = pkg;
 
-const generateIcons = () => {
-  const reactIcons = path.dirname("src/icons/icons/");
-  const svgIcons = path.dirname("src/svg/svg/");
+const {
+  template,
+  camelCase,
+  upperFirst,
+} = pkg;
 
-  fs.rm(reactIcons, { recursive: true, force: true }, async err => {
-    if (err) {
-      console.log("err", err);
+const fsRm = promisify(fs.rm);
+const fsAccess = promisify(fs.access);
+const fsMkdir = promisify(fs.mkdir);
+const fsReaddir = promisify(fs.readdir);
+const fsWriteFile = promisify(fs.writeFile);
 
-      return null;
-    }
-
-    try {
-      await promisify(fs.access)(reactIcons);
-    } catch (err) {
-      await promisify(fs.mkdir)(reactIcons);
-    }
-
-    // получение всех файлов
-    fs.readdir(svgIcons, (err, files) => {
-      if (err) {
-        return Promise.resolve(err);
-      }
-
-      const exportReactIcons = files.map(_name => {
-        const name = `${upperFirst(camelCase(_name.split(".")[0]))}Icon`;
-
-        return `\nexport { ${name} } from "./${name}";`;
-      });
-
-      // создать экспорты всех реакт иконок index.ts
-      fs.writeFile(
-        `${reactIcons}/index.ts`,
-        `${`${exportReactIcons
-          .toString()
-          .replace(/(,|\[|\])/g, "")}`.trim()}\n`,
-        {},
-        err => {
-          if (err) {
-            console.log("err", err);
-          }
-        },
-      );
-
-      const render = template(
-        `${`
-import React, { FC, memo } from 'react';
-import <%= component %> from '../svg/<%= path %>.svg';
+const reactIconTemplate = template(
+  `${`
+import React, { FC, memo } from "react";
+import <%= component %> from "../svg/<%= path %>.svg";
 
 export interface I<%= name %>Props
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
@@ -58,38 +26,69 @@ export interface I<%= name %>Props
 export const <%= name %>: FC<I<%= name %>Props> = memo(props => {
   return <<%= component %> {...props} />;
 });
-
 `.trim()}\n`,
-      );
+);
 
-      files.forEach(_fileName => {
-        const fileName = _fileName.split(".")[0];
+const getExportString = (files, callback) => files.map(_name => {
+  const name = `${upperFirst(camelCase(_name.split(".")[0]))}Icon`;
 
-        if (fileName) {
-          const component = upperFirst(camelCase(fileName.replace(/-/g, " ")));
+  return callback?.(name) ?? name;
+});
 
-          fs.writeFile(
-            `${reactIcons}/${component}Icon.tsx`,
-            render({
-              path: fileName,
-              component: `${component}Svg`,
-              name: `${component}Icon`,
-            }),
-            {},
-            err => {
-              if (err) {
-                console.log("err", err);
-              }
-            },
-          );
-        }
-      });
+const generateIcons = async () => {
+try {
+  const dirname = path.dirname("");
+  const indexSrcPath = path.resolve(dirname, "src/index.ts");
+  const reactIcons = path.resolve(dirname, "src/icons");
+  const svgIcons = path.resolve(dirname, "src/svg");
 
-      return null;
-    });
-
-    return null;
+  await fsRm(reactIcons, {
+    recursive: true,
+    force: true,
   });
+
+  try {
+    await promisify(fsAccess)(reactIcons).catch(() => {
+      promisify(fsMkdir)(reactIcons).catch(er => {
+        console.log("er", er);
+      });
+    });
+  } catch (e) {
+    console.log("e", e);
+  }
+
+  const files = await fsReaddir(svgIcons);
+  const exportIconsString = getExportString(files, name => `\nexport { ${name} } from "./icons/${name}";`)
+    .toString().replace(/(,|\[|\\])/g, "");
+
+  await Promise.all(files.map(_fileName => {
+    const fileName = _fileName.split(".")[0];
+
+    if (fileName) {
+      const component = upperFirst(camelCase(fileName.replace(/-/g, " ")));
+
+      return fsWriteFile(
+        `${reactIcons}/${component}Icon.tsx`,
+        reactIconTemplate({
+          path: fileName,
+          component: `${component}Svg`,
+          name: `${component}Icon`,
+        }),
+      );
+    }
+
+    return Promise.resolve();
+  }));
+
+
+  // создать экспорты всех реакт иконок src/index.ts
+  await fsWriteFile(indexSrcPath, `${`${exportIconsString}`.trim()}\n`);
+} catch (e) {
+  console.log("ERROR", e);
+}
+
 };
 
-generateIcons();
+generateIcons().then(() => {
+  console.log("Generation icons successfully");
+});

@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ShieldCheckSvg from '../svg/shield-check.svg';
+import React, { FC, memo } from "react";
+import ShieldCheckSvg from "../svg/shield-check.svg";
 
 export interface IShieldCheckIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ShieldCheckIcon: FC<IShieldCheckIconProps> = memo(props => {
-  return <ShieldCheckSvg {...props} />;
-});
+export const ShieldCheckIcon: FC<IShieldCheckIconProps> = memo(props => (
+  <ShieldCheckSvg {...props} />
+));

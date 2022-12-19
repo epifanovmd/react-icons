@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ShieldEditOutlineSvg from '../svg/shield-edit-outline.svg';
+import React, { FC, memo } from "react";
+import ShieldEditOutlineSvg from "../svg/shield-edit-outline.svg";
 
 export interface IShieldEditOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ShieldEditOutlineIcon: FC<IShieldEditOutlineIconProps> = memo(props => {
-  return <ShieldEditOutlineSvg {...props} />;
-});
+export const ShieldEditOutlineIcon: FC<IShieldEditOutlineIconProps> = memo(
+  props => <ShieldEditOutlineSvg {...props} />,
+);

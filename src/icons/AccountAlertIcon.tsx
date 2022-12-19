@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import AccountAlertSvg from '../svg/account-alert.svg';
+import React, { FC, memo } from "react";
+import AccountAlertSvg from "../svg/account-alert.svg";
 
 export interface IAccountAlertIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const AccountAlertIcon: FC<IAccountAlertIconProps> = memo(props => {
-  return <AccountAlertSvg {...props} />;
-});
+export const AccountAlertIcon: FC<IAccountAlertIconProps> = memo(props => (
+  <AccountAlertSvg {...props} />
+));

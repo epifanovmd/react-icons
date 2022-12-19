@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import BankOutlineSvg from '../svg/bank-outline.svg';
+import React, { FC, memo } from "react";
+import BankOutlineSvg from "../svg/bank-outline.svg";
 
 export interface IBankOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const BankOutlineIcon: FC<IBankOutlineIconProps> = memo(props => {
-  return <BankOutlineSvg {...props} />;
-});
+export const BankOutlineIcon: FC<IBankOutlineIconProps> = memo(props => (
+  <BankOutlineSvg {...props} />
+));

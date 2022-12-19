@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import CalendarMultiselectSvg from '../svg/calendar-multiselect.svg';
+import React, { FC, memo } from "react";
+import CalendarMultiselectSvg from "../svg/calendar-multiselect.svg";
 
 export interface ICalendarMultiselectIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const CalendarMultiselectIcon: FC<ICalendarMultiselectIconProps> = memo(props => {
-  return <CalendarMultiselectSvg {...props} />;
-});
+export const CalendarMultiselectIcon: FC<ICalendarMultiselectIconProps> = memo(
+  props => <CalendarMultiselectSvg {...props} />,
+);

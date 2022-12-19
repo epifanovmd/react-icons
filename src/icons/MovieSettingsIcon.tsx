@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import MovieSettingsSvg from '../svg/movie-settings.svg';
+import React, { FC, memo } from "react";
+import MovieSettingsSvg from "../svg/movie-settings.svg";
 
 export interface IMovieSettingsIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const MovieSettingsIcon: FC<IMovieSettingsIconProps> = memo(props => {
-  return <MovieSettingsSvg {...props} />;
-});
+export const MovieSettingsIcon: FC<IMovieSettingsIconProps> = memo(props => (
+  <MovieSettingsSvg {...props} />
+));

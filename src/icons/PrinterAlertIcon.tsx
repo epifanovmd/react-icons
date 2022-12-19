@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import PrinterAlertSvg from '../svg/printer-alert.svg';
+import React, { FC, memo } from "react";
+import PrinterAlertSvg from "../svg/printer-alert.svg";
 
 export interface IPrinterAlertIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const PrinterAlertIcon: FC<IPrinterAlertIconProps> = memo(props => {
-  return <PrinterAlertSvg {...props} />;
-});
+export const PrinterAlertIcon: FC<IPrinterAlertIconProps> = memo(props => (
+  <PrinterAlertSvg {...props} />
+));

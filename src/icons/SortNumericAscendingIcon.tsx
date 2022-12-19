@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import SortNumericAscendingSvg from '../svg/sort-numeric-ascending.svg';
+import React, { FC, memo } from "react";
+import SortNumericAscendingSvg from "../svg/sort-numeric-ascending.svg";
 
 export interface ISortNumericAscendingIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const SortNumericAscendingIcon: FC<ISortNumericAscendingIconProps> = memo(props => {
-  return <SortNumericAscendingSvg {...props} />;
-});
+export const SortNumericAscendingIcon: FC<ISortNumericAscendingIconProps> =
+  memo(props => <SortNumericAscendingSvg {...props} />);

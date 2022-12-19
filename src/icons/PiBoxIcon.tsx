@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import PiBoxSvg from '../svg/pi-box.svg';
+import React, { FC, memo } from "react";
+import PiBoxSvg from "../svg/pi-box.svg";
 
 export interface IPiBoxIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const PiBoxIcon: FC<IPiBoxIconProps> = memo(props => {
-  return <PiBoxSvg {...props} />;
-});
+export const PiBoxIcon: FC<IPiBoxIconProps> = memo(props => (
+  <PiBoxSvg {...props} />
+));

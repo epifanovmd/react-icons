@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import HumanCaneSvg from '../svg/human-cane.svg';
+import React, { FC, memo } from "react";
+import HumanCaneSvg from "../svg/human-cane.svg";
 
 export interface IHumanCaneIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const HumanCaneIcon: FC<IHumanCaneIconProps> = memo(props => {
-  return <HumanCaneSvg {...props} />;
-});
+export const HumanCaneIcon: FC<IHumanCaneIconProps> = memo(props => (
+  <HumanCaneSvg {...props} />
+));

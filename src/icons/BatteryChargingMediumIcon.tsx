@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import BatteryChargingMediumSvg from '../svg/battery-charging-medium.svg';
+import React, { FC, memo } from "react";
+import BatteryChargingMediumSvg from "../svg/battery-charging-medium.svg";
 
 export interface IBatteryChargingMediumIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const BatteryChargingMediumIcon: FC<IBatteryChargingMediumIconProps> = memo(props => {
-  return <BatteryChargingMediumSvg {...props} />;
-});
+export const BatteryChargingMediumIcon: FC<IBatteryChargingMediumIconProps> =
+  memo(props => <BatteryChargingMediumSvg {...props} />);

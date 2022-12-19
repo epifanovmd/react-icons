@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import AccountCashOutlineSvg from '../svg/account-cash-outline.svg';
+import React, { FC, memo } from "react";
+import AccountCashOutlineSvg from "../svg/account-cash-outline.svg";
 
 export interface IAccountCashOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const AccountCashOutlineIcon: FC<IAccountCashOutlineIconProps> = memo(props => {
-  return <AccountCashOutlineSvg {...props} />;
-});
+export const AccountCashOutlineIcon: FC<IAccountCashOutlineIconProps> = memo(
+  props => <AccountCashOutlineSvg {...props} />,
+);

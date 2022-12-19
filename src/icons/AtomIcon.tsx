@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import AtomSvg from '../svg/atom.svg';
+import React, { FC, memo } from "react";
+import AtomSvg from "../svg/atom.svg";
 
 export interface IAtomIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const AtomIcon: FC<IAtomIconProps> = memo(props => {
-  return <AtomSvg {...props} />;
-});
+export const AtomIcon: FC<IAtomIconProps> = memo(props => (
+  <AtomSvg {...props} />
+));

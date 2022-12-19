@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import FolderRefreshOutlineSvg from '../svg/folder-refresh-outline.svg';
+import React, { FC, memo } from "react";
+import FolderRefreshOutlineSvg from "../svg/folder-refresh-outline.svg";
 
 export interface IFolderRefreshOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const FolderRefreshOutlineIcon: FC<IFolderRefreshOutlineIconProps> = memo(props => {
-  return <FolderRefreshOutlineSvg {...props} />;
-});
+export const FolderRefreshOutlineIcon: FC<IFolderRefreshOutlineIconProps> =
+  memo(props => <FolderRefreshOutlineSvg {...props} />);

@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import CloseNetworkSvg from '../svg/close-network.svg';
+import React, { FC, memo } from "react";
+import CloseNetworkSvg from "../svg/close-network.svg";
 
 export interface ICloseNetworkIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const CloseNetworkIcon: FC<ICloseNetworkIconProps> = memo(props => {
-  return <CloseNetworkSvg {...props} />;
-});
+export const CloseNetworkIcon: FC<ICloseNetworkIconProps> = memo(props => (
+  <CloseNetworkSvg {...props} />
+));

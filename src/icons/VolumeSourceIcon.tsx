@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import VolumeSourceSvg from '../svg/volume-source.svg';
+import React, { FC, memo } from "react";
+import VolumeSourceSvg from "../svg/volume-source.svg";
 
 export interface IVolumeSourceIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const VolumeSourceIcon: FC<IVolumeSourceIconProps> = memo(props => {
-  return <VolumeSourceSvg {...props} />;
-});
+export const VolumeSourceIcon: FC<IVolumeSourceIconProps> = memo(props => (
+  <VolumeSourceSvg {...props} />
+));

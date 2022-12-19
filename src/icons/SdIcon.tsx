@@ -1,9 +1,6 @@
-import React, { FC, memo } from 'react';
-import SdSvg from '../svg/sd.svg';
+import React, { FC, memo } from "react";
+import SdSvg from "../svg/sd.svg";
 
-export interface ISdIconProps
-  extends React.HTMLAttributes<HTMLOrSVGElement> {}
+export interface ISdIconProps extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const SdIcon: FC<ISdIconProps> = memo(props => {
-  return <SdSvg {...props} />;
-});
+export const SdIcon: FC<ISdIconProps> = memo(props => <SdSvg {...props} />);

@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ZodiacSagittariusSvg from '../svg/zodiac-sagittarius.svg';
+import React, { FC, memo } from "react";
+import ZodiacSagittariusSvg from "../svg/zodiac-sagittarius.svg";
 
 export interface IZodiacSagittariusIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ZodiacSagittariusIcon: FC<IZodiacSagittariusIconProps> = memo(props => {
-  return <ZodiacSagittariusSvg {...props} />;
-});
+export const ZodiacSagittariusIcon: FC<IZodiacSagittariusIconProps> = memo(
+  props => <ZodiacSagittariusSvg {...props} />,
+);

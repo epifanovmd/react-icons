@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import BugPlayOutlineSvg from '../svg/bug-play-outline.svg';
+import React, { FC, memo } from "react";
+import BugPlayOutlineSvg from "../svg/bug-play-outline.svg";
 
 export interface IBugPlayOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const BugPlayOutlineIcon: FC<IBugPlayOutlineIconProps> = memo(props => {
-  return <BugPlayOutlineSvg {...props} />;
-});
+export const BugPlayOutlineIcon: FC<IBugPlayOutlineIconProps> = memo(props => (
+  <BugPlayOutlineSvg {...props} />
+));

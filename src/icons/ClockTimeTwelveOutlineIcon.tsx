@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import ClockTimeTwelveOutlineSvg from '../svg/clock-time-twelve-outline.svg';
+import React, { FC, memo } from "react";
+import ClockTimeTwelveOutlineSvg from "../svg/clock-time-twelve-outline.svg";
 
 export interface IClockTimeTwelveOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ClockTimeTwelveOutlineIcon: FC<IClockTimeTwelveOutlineIconProps> = memo(props => {
-  return <ClockTimeTwelveOutlineSvg {...props} />;
-});
+export const ClockTimeTwelveOutlineIcon: FC<IClockTimeTwelveOutlineIconProps> =
+  memo(props => <ClockTimeTwelveOutlineSvg {...props} />);

@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import Battery10BluetoothSvg from '../svg/battery-10-bluetooth.svg';
+import React, { FC, memo } from "react";
+import Battery10BluetoothSvg from "../svg/battery-10-bluetooth.svg";
 
 export interface IBattery10BluetoothIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const Battery10BluetoothIcon: FC<IBattery10BluetoothIconProps> = memo(props => {
-  return <Battery10BluetoothSvg {...props} />;
-});
+export const Battery10BluetoothIcon: FC<IBattery10BluetoothIconProps> = memo(
+  props => <Battery10BluetoothSvg {...props} />,
+);

@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ShakerOutlineSvg from '../svg/shaker-outline.svg';
+import React, { FC, memo } from "react";
+import ShakerOutlineSvg from "../svg/shaker-outline.svg";
 
 export interface IShakerOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ShakerOutlineIcon: FC<IShakerOutlineIconProps> = memo(props => {
-  return <ShakerOutlineSvg {...props} />;
-});
+export const ShakerOutlineIcon: FC<IShakerOutlineIconProps> = memo(props => (
+  <ShakerOutlineSvg {...props} />
+));

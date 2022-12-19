@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import ScaleSvg from '../svg/scale.svg';
+import React, { FC, memo } from "react";
+import ScaleSvg from "../svg/scale.svg";
 
 export interface IScaleIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const ScaleIcon: FC<IScaleIconProps> = memo(props => {
-  return <ScaleSvg {...props} />;
-});
+export const ScaleIcon: FC<IScaleIconProps> = memo(props => (
+  <ScaleSvg {...props} />
+));

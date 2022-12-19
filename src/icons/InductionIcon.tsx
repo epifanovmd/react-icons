@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import InductionSvg from '../svg/induction.svg';
+import React, { FC, memo } from "react";
+import InductionSvg from "../svg/induction.svg";
 
 export interface IInductionIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const InductionIcon: FC<IInductionIconProps> = memo(props => {
-  return <InductionSvg {...props} />;
-});
+export const InductionIcon: FC<IInductionIconProps> = memo(props => (
+  <InductionSvg {...props} />
+));

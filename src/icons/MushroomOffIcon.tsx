@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import MushroomOffSvg from '../svg/mushroom-off.svg';
+import React, { FC, memo } from "react";
+import MushroomOffSvg from "../svg/mushroom-off.svg";
 
 export interface IMushroomOffIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const MushroomOffIcon: FC<IMushroomOffIconProps> = memo(props => {
-  return <MushroomOffSvg {...props} />;
-});
+export const MushroomOffIcon: FC<IMushroomOffIconProps> = memo(props => (
+  <MushroomOffSvg {...props} />
+));

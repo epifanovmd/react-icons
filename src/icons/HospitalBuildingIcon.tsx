@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import HospitalBuildingSvg from '../svg/hospital-building.svg';
+import React, { FC, memo } from "react";
+import HospitalBuildingSvg from "../svg/hospital-building.svg";
 
 export interface IHospitalBuildingIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const HospitalBuildingIcon: FC<IHospitalBuildingIconProps> = memo(props => {
-  return <HospitalBuildingSvg {...props} />;
-});
+export const HospitalBuildingIcon: FC<IHospitalBuildingIconProps> = memo(
+  props => <HospitalBuildingSvg {...props} />,
+);

@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import PuzzlePlusSvg from '../svg/puzzle-plus.svg';
+import React, { FC, memo } from "react";
+import PuzzlePlusSvg from "../svg/puzzle-plus.svg";
 
 export interface IPuzzlePlusIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const PuzzlePlusIcon: FC<IPuzzlePlusIconProps> = memo(props => {
-  return <PuzzlePlusSvg {...props} />;
-});
+export const PuzzlePlusIcon: FC<IPuzzlePlusIconProps> = memo(props => (
+  <PuzzlePlusSvg {...props} />
+));

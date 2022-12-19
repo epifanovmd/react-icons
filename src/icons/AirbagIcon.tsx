@@ -1,9 +1,9 @@
-import React, { FC, memo } from 'react';
-import AirbagSvg from '../svg/airbag.svg';
+import React, { FC, memo } from "react";
+import AirbagSvg from "../svg/airbag.svg";
 
 export interface IAirbagIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const AirbagIcon: FC<IAirbagIconProps> = memo(props => {
-  return <AirbagSvg {...props} />;
-});
+export const AirbagIcon: FC<IAirbagIconProps> = memo(props => (
+  <AirbagSvg {...props} />
+));

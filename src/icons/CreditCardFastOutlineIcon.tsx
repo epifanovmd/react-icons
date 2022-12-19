@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react';
-import CreditCardFastOutlineSvg from '../svg/credit-card-fast-outline.svg';
+import React, { FC, memo } from "react";
+import CreditCardFastOutlineSvg from "../svg/credit-card-fast-outline.svg";
 
 export interface ICreditCardFastOutlineIconProps
   extends React.HTMLAttributes<HTMLOrSVGElement> {}
 
-export const CreditCardFastOutlineIcon: FC<ICreditCardFastOutlineIconProps> = memo(props => {
-  return <CreditCardFastOutlineSvg {...props} />;
-});
+export const CreditCardFastOutlineIcon: FC<ICreditCardFastOutlineIconProps> =
+  memo(props => <CreditCardFastOutlineSvg {...props} />);
