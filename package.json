@@ -5,7 +5,6 @@
   "main": "lib/cjs/src/index.js",
   "module": "lib/esm/src/index.js",
   "types": "lib/esm/index.d.ts",
-  "type": "module",
   "files": [
     "lib/",
     "README.md"
